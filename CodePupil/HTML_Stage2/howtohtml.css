@@ -1,0 +1,377 @@
+/*Elements -start*/
+#ElementIntroduction{
+	text-align: center;
+	padding: 20px 30px;
+	border-bottom: dotted #D34E4E;
+}
+#ElementIntroduction img{
+	border: solid 1px #999999;
+	width: 60vw;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+#ElementIntroduction h2{
+	margin-top: 0;
+}
+#ElementContinuation{
+	text-align: center;
+	padding: 20px 30px;
+	border-bottom: solid #D34E4E;
+}
+
+#ElementContinuation h3{
+	margin-top: 0;
+}
+/*Elements -end*/
+
+/*Attributes -start*/
+#AttributeIntroduction{
+	background-color: white;
+	text-align: center;
+	padding: 20px 30px;
+	border-bottom: solid #D34E4E;
+}
+#AttributeIntroduction h2{
+	margin-top: 0;
+}
+#AttributeIntroduction img{
+	width: 50vw;
+}
+/*Attributes -end*/
+
+/*Creating a html file -start*/
+#creatingfile{
+	border-bottom: solid #D34E4E;
+	text-align: center;
+	margin-bottom: 0;
+	padding: 20px 30px;
+	background-color: #FFC9B2;
+	margin-left: 0;
+	margin-right: 0;
+}
+#creatingfile .wholepageimage{
+	width: 80vw;
+	border: solid 1px #999999;
+}
+#workspacemenu{
+	width: 40vw;
+	border: solid 1px #999999;
+}
+#workspacebutton{
+	width: 25vw;
+	border: solid 1px #999999;
+}
+
+#creatingfile h2{
+	margin-top: 0;
+}
+
+/*Creating a html file -end*/
+
+/*Writing HTML -start*/
+
+#addingcontent{
+	background-color: white;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+	padding: 20px 0px 20px 0px;
+	border-bottom: solid #D34E4E;
+}
+
+#addingcontenttitle{
+	border-bottom: 2px dotted #D34E4E;
+}
+#addingcontentmain{
+	border-bottom: 2px dotted #D34E4E;
+	padding: 0px 30px;
+}
+
+#addingcontentmain img{
+	width: 80vw;
+}
+
+#addingcontentheadings{
+	border-bottom: 2px dotted #D34E4E;
+	padding: 0px 30px;
+}
+#addingcontenttext{
+	border-bottom: 2px dotted #D34E4E;
+	padding: 0px 30px;
+}
+#addingcontentaction{
+	padding: 0px 30px;
+}
+.typethis{
+	font-weight: bold;
+}
+#addingcontentaction img{
+	width: 80vw;
+	border: solid 1px #999999;
+}
+
+#tagexample{
+	width: 50 vw;
+	margin-bottom: 30px;
+	border: solid 1px black;
+}
+/*Heading no style example -start*/
+
+.nostyle{
+	color: black;
+	font-family: serif;
+	border: 1px solid black;
+	width: 40vw;
+	float: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	border-radius: 25px;
+	background-color: #FF9059;
+}
+
+.nostyle h1{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+/*Heading no style example -end*/
+
+/*Wrtiting HTML -end*/
+
+/*A list of tags -start*/
+
+#taglist{
+	background-color: #FFC9B2;
+	border-bottom: solid #D34E4E;
+	padding-top: 20px;
+	text-align: center;
+}
+#taglist p{
+	margin: 5px 30px;
+}
+#taglist h2{
+	margin-top: 0;
+}
+#taglist table{
+	width: 90vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	background-color: white;
+	box-shadow: 10px 10px 5px #E8A4A4;
+	border-collapse: collapse;
+
+}
+#elementsofhtml td, #elementsofhtml th{
+	border: 1px solid black;
+	padding: 10px;
+}
+#elementsofhtml img{
+	width: 100px;
+	padding: 10px;
+}
+
+#fulltaglink{
+	margin-top: 30px;
+}
+
+#taglist a{
+	color: black;
+}
+.elementtableelement{
+	border:solid 2px black;
+	padding:4px 10px;
+	color: darkred;
+	font-weight: bold;
+}
+/*A list of tags -end*/
+
+/*Creating a hyperlink -start*/
+
+#addinghyperlink{
+	text-align: center;
+	padding: 20px 30px;
+	margin-left: 0;
+	margin-right: 0;
+	border-bottom: solid #D34E4E;
+}
+
+#addinghyperlink img{
+	width: 80vw;
+}
+#addinghyperlink h2{
+	margin-top: none;
+}
+/*Creating a hyperlink -end*/
+
+#addingtitle {
+	text-align: center;
+	padding: 20px 30px;
+	margin-left: 0;
+	margin-right: 0;
+	border-bottom: solid #D34E4E;
+}
+#addingtitle h2{
+	margin-top: none;
+}
+/*Validation -start*/
+#validatingsection{
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+	padding: 20px 30px;
+	border-bottom: solid #D34E4E;
+}
+#validatingsection img{
+	width: 80vw;
+}
+
+/*Validation -end*/
+
+/*Lists -start*/
+#creatinglists{
+	text-align: center;
+}
+
+#creatinglistsworkings{
+	border-top: dotted #D34E4E;
+	border-bottom: dotted #D34E4E;
+}
+
+#creatinglistsworkings h3{
+	border-top: red;
+}
+
+#creatinglistsworkings img{
+	width: 30vw;
+	margin-bottom: 20px;
+}
+
+
+.leftperson{
+	min-width: 200px;
+	padding: 10px;
+	border: solid 1px black;
+	background-color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 60vw;
+	border-radius: 30px 30px 30px 0px;
+}
+.leftpersonout{
+	width: 100%;
+}
+.rightperson {
+	min-width: 200px;
+	padding: 10px;
+	border: solid 1px black;
+	background-color: white;
+	margin-left: 60vw;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	border-radius: 30px 30px 0px 30px;
+}
+.rightpersonout{
+	width: 100%;
+}
+#storelocations{
+	border-top: dotted #D34E4E;
+	padding: 0px 30px;
+}
+#storelocationslist{
+	list-style-position: inside;
+}
+#storelocationsimg img{
+	width: 55vw;
+	margin-left: 20vw;
+}
+/*Lists -end*/
+
+/*Adding Images -start*/
+#addingimages{
+	text-align: center;
+	border-top: solid #D34E4E;
+	border-bottom: dotted #D34E4E;
+	padding: 0px 30px;
+}
+
+#addingimagescont{
+	border-bottom: solid #D34E4E;
+	padding: 0px 30px;
+	text-align: center;
+}
+
+#addingimages img{
+	width: 50vw;
+	margin-bottom: 20px;
+}
+
+#addingimagescont #coffeecupimage{
+	width: 50vw;
+	margin-left:18vw;
+	margin-bottom: 20px;
+}
+#addingimagescont #finalcoffeehtml{
+	width: 80vw;
+}
+/*Adding Images -end*/
+
+/*Creating Tables -start*/
+
+#creatingtables{
+	text-align: center;
+	padding: 0px 30px;
+	border-bottom: solid #D34E4E;
+}
+#tableelementstable{
+	width: 90vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	background-color: white;
+	border-collapse: collapse;
+}
+#tableelementstable th, #tableelementstable td{
+	border: 1px solid black;
+	padding: 10px;	
+}
+#creatingtables img{
+	height: 50vh;
+}
+#creatingtables #exampletable{
+	display: block;
+	width: 225px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#exampletable td,#exampletable th, #exampletable {
+	border: solid black 1px;
+}
+/*Creating Tables -end*/
+
+/*Moving on to CSS -start*/
+
+#nextsection{
+	text-align: center;
+	height: calc(40vh + 150px);
+	background: linear-gradient(to bottom right, #FFC9B2, #FFFFFF);
+	padding: 20px 30px;	
+}
+#nextsection h2{
+	margin-top: none;
+}
+
+#nextsection img{
+	height: 150px;
+}
+#nextsection a{
+	color: black;
+}
+
+/*Moving on to CSS -end*/

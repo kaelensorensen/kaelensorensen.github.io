@@ -1,0 +1,44 @@
+/*Top of page animation -start*/
+
+#colorpagetop{
+	height: 100vh;
+	box-sizing: border-box;
+	padding-top: 40vh;
+	display: block;
+	text-align: center;
+	border-bottom: 3px solid #D34E4E;
+	background: linear-gradient(132deg, #FFFFFF, #ffcccc,#9B1A1A);
+	background-size: 400% 400%;
+	animation: BackgroundGradient 5s infinite;
+	z-index: -2;
+	position: relative;
+}
+@keyframes BackgroundGradient{
+	0%{ background-position: 0%;}
+	50%{ background-position: 100% 50%;}
+	100%{ background-position: 0%;}
+}
+
+/*Top of page animation -end*/
+
+/*List of references -start*/
+.referencecontainer{
+	text-align: center;
+	padding-top: 20px;
+}
+
+ul{
+	padding-left: calc((100vw/7)*2);
+	width: calc((100vw/7)*3);
+	
+}
+
+li a{
+	color: black;
+}
+
+#pagehighlight li a:hover{
+	color: red;
+}
+/*List of references -end*/
+

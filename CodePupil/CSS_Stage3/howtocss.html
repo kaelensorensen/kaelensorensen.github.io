@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>	
+
+		<title>Learning To Write CSS</title>
+
+		<meta charset="UTF-8">
+
+		<link type="text/css" rel="stylesheet" href="../menu.css" />
+
+		<link type="text/css" rel="stylesheet" href="../allpages.css" />
+
+		<link type="text/css" rel="stylesheet" href="howtocss.css" />
+
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
+
+		<link rel="icon" type="image/png" href="../Images/Allpages/Logo.png"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script>
+			//https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
+			$(document).ready(function(){
+
+				$("a").on('click', function(event) {
+
+					if (this.hash !== "") {
+						event.preventDefault();
+						var hash = this.hash;
+
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top - 90}, 1000, function(){
+						});
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<script src="../menu.js"></script>
+
+		<div id="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#AnchorCSSBasic" onclick="closeNav()">The basics of CSS</a>
+			<a href="#Anchortypes" onclick="closeNav()">Types of CSS</a>
+			<a href="#Anchorstylesheet" onclick="closeNav()">Creating External Stylesheet</a>
+			<a href="#Anchorselector" onclick="closeNav()">Learning about selectors</a>
+			<a href="#Anchorproperty" onclick="closeNav()">Changing CSS properties</a>
+			<a href="#Anchordiv" onclick="closeNav()">Divs and Spans</a>
+			<a href="#Anchormod" onclick="closeNav()">Modifications to Coffee Lounge</a>
+
+		</div>
+		<div class="menuout">
+			<ul class="menu">
+				<li id=sidenavonmenu style="cursor:pointer" onclick="openNav()">&#9776; </li>
+				<li class="homebutton">	
+					<a href="../index.html"><img src="../Images/Allpages/Logotext.png" alt="logo image"/></a>
+				</li>
+
+				<li class="dropdown">
+					<a href="#" class="dropbtn">Lessons</a>
+
+					<div class="dropdown-content">
+						<a href="../Introduction_Stage1/introduction.html">1. An introduction into the web </a>
+						<a href="../HTML_Stage2/howtohtml.html">2. Learning HTML markup</a>
+						<a href="#">3. Learning how to code CSS</a>
+						<a href="../FinalTips_Stage4/generalhowto.html">4. Some final tips to create an awesome website</a>
+					</div>
+				</li>
+
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Quick Links</a>
+
+					<div class="dropdown-content">
+						<a href="https://validator.w3.org/">HTML W3C Validator</a>
+						<a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a>
+						<a href="../TextEditor/text.html"> A place to write HTML, CSS and JavaScript!</a>
+					</div>
+				</li>
+
+				<li class="about">
+					<a href="../about/about.html">About us</a>
+				</li>
+
+			</ul>
+
+		</div>
+
+		<div id="pageall">
+			<div class="pagetop">
+
+				<h1>Learning how to write CSS to add style to your website!</h1>
+
+				<p>The 3rd of 4 stages in your epic Code Pupil adventure!</p>
+			</div>
+			<div id="cssbasics">
+
+				<h2><a id="AnchorCSSBasic"></a>The basics of CSS</h2>
+
+				<p>As you've learnt CSS stands for Cascading Style Sheets, and allows you to add style to your website and describes how to display the content.</p>
+
+				<p>In this lesson you hopefully gain a basic understanding of CSS!</p>
+
+				<p>There are 3 kinds of CSS that all have to the same syntax and affect. These are Inline CSS, Embedded CSS and External CSS.</p>
+
+				<p>CSS has an easy to learn syntax with all the modifications being made inside a selector. The selector is usually the element name, id, class which will be talked about later. The selector is marked out by braces which sit next to the selectpor. We can see this in the image below:
+
+				<div><img src="../Images/CSS_Stage3/CSSsyntax1.png" alt="Selector and braces example" id="samplesmall"/></div>
+
+				<p>Inside the braces you write the property you want to want to change, a colon on the right, then a space. After this you write the value you are going to set the property to and after that you end the line with a semicolon. You can see this in the image below:</p>
+			</div>	
+
+			<div><img src="../Images/CSS_Stage3/CSSexplained.png" alt="Selector and braces example" id="sampleoutertext"/></div>
+
+			<h2 id="typesofcssheading"><a id="Anchortypes"></a>Types of CSS</h2>
+
+			<div id="typesofcss">
+
+				<div id="inlinecss">
+
+					<h3>Inline CSS</h3>
+
+					<p>Inline CSS is done through the <span class="tagyellow">style</span> attribute inside the element you want to syle. This form of styling is contained between quotaion marks and has no separate lines. This method makes it harder to read and understand your CSS but does make it so that you do not need to worry about selectors. Inline styling looks something like this: </p>
+
+					<div><img src="../Images/CSS_Stage3/InlineCSS.png" alt="Inline CSS example" id="inlinecssimage"/></div>
+
+				</div>
+
+				<div id="embeddedcss">
+
+					<h3>Embedded CSS</h3>
+
+					<p>Embedded CSS is done through the <span class="tagred">style</span> element at the top of a html document in the head. The style element makes everything inside it format as CSS and is very useful for basic CSS, however it does make your html document harder to navigate and if you are creating a complicated website it is best to use external style sheets. You can see embedded html in use below:</p>
+
+					<div><img src="../Images/CSS_Stage3/InlineCSS.png" alt="Inline CSS example" id="embeddedcssimage"/></div>
+
+				</div>
+
+				<div id="externalcss">
+
+					<h3>External CSS</h3>
+
+					<p>External CSS is done through the creation of external style sheets which store all your CSS. Some benefits of using this method includes:</p>
+
+					<ul id="externalcssprolist">
+						<li>Reuse of styling that saves time and lines of code to make your website load faster.</li>
+						<li>Separated CSS looks neater and doesn't fill up your html document.</li>
+						<li>Shows that your fancy and know how to use the link tag.</li>
+					</ul>
+
+					<p>As you can see external CSS is a great option and that is why we are going to teach you it!</p>		
+
+				</div>
+			</div>
+
+			<div id="creatingexternalstylesheet">
+				<h2><a id="Anchorstylesheet"></a>How to create an external style sheet!</h2>
+
+				<p>If you remember how to create a html document creating a css document isn't much different. Open up the Coffee lounge page and create a css document we are going to add some style to this page to make it more appealing to the customers.</p>
+
+				<p>You do this by right clicking in the left area of the screen below your html document and click <q>New File</q>. Next type "style.css" into the file tab at the top of the screen like the image below, and then click enter!</p>
+
+				<div><img src="../Images/CSS_Stage3/CreatingCSSDocument/namingcssdoc.png" alt="Naming a CSS document"/></div>
+
+				<p>This will create a CSS document like the one below:</p>
+
+				<div><img src="../Images/CSS_Stage3/CreatingCSSDocument/createdcssdoc.png" alt="A created CSS document"/></div>
+
+				<p>Now we are going to link this css document to the html document by creating this tag inside the html in the head of the page:</p>
+
+				<div id="largefont"><span class="taggrey">&lt;</span><span class="tagred">link</span> <span class="tagyellow">type</span>=<span class="tagpink">"text/css"</span> <span class="tagyellow">rel</span>=<span class="tagpink">"stylesheet"</span> <span class="tagyellow">href</span>=<span class="tagpink">"style.css"</span><span class="taggrey"> /></span></div>
+
+				<p>This will make it so that the CSS in the document will effect the html document.</p>
+			</div>
+
+			<div id="selectormain">
+
+				<div id="selectorbeggining">
+
+					<h2>Learning about selectors!</h2>
+
+					<p>Selectors are very important in external and embedded CSS as they allow you to target specific sections of code and some are ideal for certain circumstances. There are 5 main selectors which you need to understand to be an awesome CSS styler.</p>
+				</div>
+
+				<div id="typeselector">
+					<h3>Type selector</h3>
+
+					<p>The type selector selects any html element on the page that matches the selector no matter where the the element is located. This tag is really useful for general styling and being used in decendants styling.</p>
+
+					<p>The type selector is written by just writting the tag name without any of the parenthesis. You can see this selector in use below:</p>
+					<div class="selectorsample"><span class="tagred">p</span> {<br/>
+						<br/>
+						}</div>
+
+				</div>
+
+				<div id="decendantsselector">
+
+					<h3>Decendants selector</h3>
+
+					<p>If you want to select an element that is inside another element then you can use the decendants selector. The decendants selector isn't too different of a selector and you need to know how other selectors work to use it. The decendants selector is written by writing two selectors next to each other with the space in between them. The selector will target any version of the second selector that lies inside the first selector. In HTML we call this nesting as the second element is <q>nested</q> inside the first. You can see this selector in use below:</p>
+
+					<div class="selectorsample"><span class="tagred">body  p</span> {<br/>
+						<br/>
+						}</div>
+				</div>
+
+				<div id="universalselector">
+
+					<h3>Universal selector</h3>
+
+					<p>The universal selector targets everything on the html page no matter where the tags are located. This tag is preferable over using the body type selector alone as it doesn't take as long to load and means that the webpage is loaded faster. The universal selector is just an asterix.</p>
+
+					<div class="selectorsample"><span class="tagred">*</span> {<br/>
+						<br/>
+						}</div>
+
+				</div>
+
+				<div id="idandclassselector">
+
+					<h3>Ids and Class selectors</h3>
+
+					<p>These two selectors can be used to specifically target certain elements on the page without using a long decendants selector. These tags require an attribute which gives the tag a sepcific id or class that can be targetted in the CSS.</p>
+
+					<p>These two attributes both work the same and you can use either and it will still work. However, it is recommended that you should always use id's for 1 time use stlying and classes for multiple time use styling.</p>
+
+					<p>Below you can see how ids function in the HTML and CSS.</p>
+
+					<div class="displaysameheight">
+
+						<div class="selectorsampleidone"><span class="taggrey">&lt;</span><span class="tagred">p</span> <span class="tagyellow">id</span>=<span class="tagpink">"idname"</span><span class="taggrey">>&lt;/</span><span class="tagred">p</span><span class="taggrey">></span>
+						</div><div class="selectorsampleidtwo">#idname {<br/>
+						<br/>
+						}</div>
+
+					</div>
+
+					<p>You can also see how classes function in the HTML and CSS</p>
+
+					<div class="displaysameheight">
+
+						<div class="selectorsampleidone"><span class="taggrey">&lt;</span><span class="tagred">p</span> <span class="tagyellow">class</span>=<span class="tagpink">"classname"</span><span class="taggrey">>&lt;/</span><span class="tagred">p</span><span class="taggrey">></span>
+
+						</div><div class="selectorsampleidtwo">.classname {<br/>
+						<br/>
+						}</div>
+
+					</div>
+
+					<p>From the examples above you can see that classes are specified with a full stop and ids are specified with a hash tag (pound sign). These tags do take priority over the universal and type selector so you can easily make minor modifications to the webpage.
+
+				</div>
+
+				<div id="adjacentselector">
+
+					<h3>The adjacent selector</h3>
+
+					<p>This selector is one of the less used selectors as most people find it hard to use and confusing. The adjacent selector requires two other selectors just like the decendants selector but it has a plus sign between these two selectors. This selector will target any of the second selector that is directly below the first selector. The below example shows how you can target every img tag that is directly after a <span class="tagred">p</span> tag.</p>
+
+				</div>
+
+				<div>
+
+					<img src="../Images/CSS_Stage3/Adjacentselector.png" alt="An example of the adjacent selector in html" id="selectorsampleadjacentone">
+
+					<div id="selectorsampleadjacenttwo"><span class="tagred">p</span> + <span class="tagred"> img</span> {<br/>
+						<br/>
+						}
+					</div>
+
+				</div>
+			</div>
+
+			<div id="cssstylingproperties">
+
+				<h2><a id="Anchorproperty"></a>Changing CSS Properties!</h2>
+
+				<p>Here is a list of common properties that you will use in our Coffee Lounge project.</p>
+
+				<table>
+
+					<tr>
+						<th>What you are changing</th>
+						<th>The CSS property to specify this</th>
+						<th>Example</th>
+						<th>Notes on aspect</th>
+					</tr>
+
+					<tr>
+
+						<td>The font</td>
+						<td>font-family</td>
+						<td>font-family: Comic-sans;</td>
+						<td>This font is web safe meaning it will work on all web browsers, yay!</td>
+
+					</tr>
+
+					<tr>
+						<td>Text color</td>
+						<td>color</td>
+						<td>color: pink;</td>
+						<td>Instead of using the word for a color you can also use a rgb color or a hex color code.</td>
+					</tr>
+
+					<tr>
+						<td>Background color</td>
+						<td>background-color</td>
+						<td>background-color: purple;</td>
+						<td>I really like purple!</td>
+					</tr>
+
+					<tr>
+						<td>The decoration of text</td>
+						<td>text-decoration</td>
+						<td>text-decoration: italic;</td>
+						<td>This is not how you specify boldness!</td>
+					</tr>
+
+					<tr>
+						<td>The width of an element</td>
+						<td>width</td>
+						<td>width: 100px;</td>
+						<td>You can use width as a percent, pixel or even the view width!</td>
+					</tr>
+
+					<tr>
+						<td>The height of an element</td>
+						<td>height</td>
+						<td>height: 100px;</td>
+						<td>The vw and vh</td>
+					</tr>
+
+					<tr>
+						<td>Alligns the text to a side of the page</td>
+						<td>text-align</td>
+						<td>text-align: center;</td>
+						<td>There is also text align left and text align right</td>
+					</tr>
+
+					<tr>
+						<td>Specifies the type of bullet point for a list </td>
+						<td>list-style-type</td>
+						<td>list-style-type: square;</td>
+						<td>This is purely aesthetics and is mostly unnecessary.</td>
+					</tr>
+
+				</table>
+
+			</div>
+
+			<div id="divandspan">
+				<h2><a id="Anchordiv"></a>Divs and Spans</h2>
+
+				<p>We have already touched on these tags a little but these tags are <strong>VERY</strong> important. These tags have no styling so they are very flexible and can be used really well in conjunction with classes and ids to create a super cool website.</p>
+
+				<div id="shape"></div>
+
+				<div>
+
+					<p>Since divs have no styling you can use them to create shapes and divide parts of your page!</p>
+
+					<p id="endshape">This page uses divs to divide up the page into individular sections that can be eaily styled. A div tag is used to group block level elements (elements that usually don't bend around each other and create their own line).</p>
+
+					<p>Some examples of block level elements include: <span class="tagred">p</span>, <span class="tagred">img</span> <span class="tagred">table</span> and <span class="tagred">ul</span>.</p>
+
+					<p>If an element is not block it is refered to as inline. These are usually <span class="tagred">i</span>, <span class="tagred">strong</span> and <span class="tagred">a</span> tags which sit inside <span class="tagred">p</span> tags or other block level elements. You can change this property using CSS!</p>
+
+					<p>Spans are used to group inline elements and without styling (like the div tag) provide no visible change. Spans are really useful for changing the color of text in places and creating unique styling effecfts like a <span id="fontchange">font change</span>.</p>
+
+					<p>Any pro coder must understand the importance of spans and classes.</p>
+				</div>
+			</div>
+
+			<div id="cssmodifications">
+
+				<h2><a id="anchormod"></a>Making modifications to Coffee Lounge!</h2>
+
+				<p>We still need to make some modifications to the Coffee Liunge website by adding some style to the page to make it look more appealing to the customer.</p>
+
+				<p>Here is a list of what we still need to do:</p>
+
+				<ul>
+
+					<li>Fix the Image size to fit the page (500px)</li>
+					<li>Add a background color to the page of #f8c98c</li>
+					<li>Change the bullet point style in the list to a square</li>
+					<li>Change the color of the hyperlink to black</li>
+					<li>Align everything into the center of the page</li>
+
+				</ul>
+
+				<p>Using the selectors we have taught you and the properties above follow the list to make your website look like this:</p>
+
+				<img src="../Images/CSS_Stage3/StylishCoffeeLounge.png" alt="A stylish version of Coffee Lounge"/>
+
+			</div>
+			
+			<div id="finaltipsmove">
+				<h2>Some final tips</h2>
+				
+				<p>Click <a href="../FinalTips_Stage4/generalhowto.html">this link</a> and learn some final tips about HTML and CSS coding!</p>
+				
+				<p>This next lesson is the final lesson and there will be a major task at the end so make sure you are ready!</p>
+				
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

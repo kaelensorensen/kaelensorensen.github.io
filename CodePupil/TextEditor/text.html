@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>	
+
+		<title>A Text Editor!</title>
+
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+		<link type="text/css" rel="stylesheet" href="../menu.css" />
+
+		<link type="text/css" rel="stylesheet" href="../allpages.css" />
+
+		<link type="text/css" rel="stylesheet" href="howtohtml.css" />
+
+		<link type="text/css" rel="stylesheet" href="text.css"/>
+
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
+
+		<link rel="icon" type="image/png" href="../Images/Allpages/Logo.png"/>
+		
+		<script src="text.js"></script>
+
+	</head>
+
+	<body>
+
+
+		<div class="menuout">
+			<ul class="menu">
+
+				<li class="homebutton">	
+					<a href="../index.html"><img src="../Images/Allpages/Logotext.png" alt="logo image"/></a>
+				</li>
+
+				<li class="dropdown">
+					<a href="#" class="dropbtn">Lessons</a>
+
+					<div class="dropdown-content">
+						<a href="../Introduction_Stage1/introduction.html">1. An introduction into the web </a>
+						<a href="#">2. Learning HTML markup</a>
+						<a href="../CSS_Stage3/howtocss.html">3. Learning how to code CSS</a>
+						<a href="../FinalTips_Stage4/generalhowto.html">4. Some final tips to create an awesome website</a>
+					</div>
+				</li>
+
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Quick Links</a>
+
+					<div class="dropdown-content">
+						<a href="https://validator.w3.org/">HTML W3C Validator</a>
+						<a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a>
+						<a href="../TextEditor/text.html"> A place to code HTML!</a>
+					</div>
+				</li>
+
+				<li class="about">
+					<a href="../about/about.html">About us</a>
+				</li>
+
+			</ul>
+
+		</div>	  
+
+		<div class="pageall">
+			<div class="pagetop">
+
+				<h1>Write Your Code Here</h1>
+				
+				<p>This is a great place for you to write HTML, CSS and Javascript!</p>
+
+			</div>
+
+			<div id="Instructions">
+
+				<h1 class="Instructions">Instructions</h1>
+
+				<p>Welcome. If you dont have access to edstem you can just simply write code here and it will display it!</p>
+
+			</div>
+
+
+			<ul class="Instructions">
+				
+				<li>Type your html in the box labeled html</li>
+				<li>Type your css in the box labeled css</li>
+				<li>Type your java script in the box labeled java script</li>
+
+			</ul>
+			
+			<p>The box below will then display what the website will look like!</p>
+			
+			<p><strong>Side note:</strong> You can create code here but when you leave the page your code will get reset.</p>
+
+		</div>
+
+		<br/>
+
+		<textarea id="html" placeholder="HTML"></textarea>
+		
+		<textarea id="css" placeholder="CSS"></textarea>
+		
+		<textarea id="js" placeholder="JavaScript"></textarea>
+		
+		<iframe id="code"></iframe>
+
+	</body>
+	
+</html>
+

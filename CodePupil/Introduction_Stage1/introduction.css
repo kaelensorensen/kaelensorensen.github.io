@@ -1,0 +1,152 @@
+/*General Styling -start*/
+
+/*General Styling -end*/
+
+/*How does the internet work -start*/
+.paddingtext{
+	padding: 40px;
+}
+.internetworkings{
+	text-align: center;
+	padding: 0px 30px;
+	clear: left;
+}
+
+.internetworkings h2 {
+	margin-top: 0;
+	padding-top: 15px;
+}
+/*The browser logos*/
+.bowserexamplebox {
+	float: left;
+	display: inline-block;
+	width: calc((100vw / 3) - 40px);
+	margin: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	border-radius: 25px;
+	background-color: white;
+	text-align: center;
+	vertical-align: middle
+}
+.browserlogo{
+	width: 40px;
+}
+
+/*How does the internet work -end*/
+
+
+/*What is HTML and CSS styling -start*/
+
+#htmlandcsshead{
+	text-align: center;
+	border-top: solid #D34E4E;
+	padding: 0px 30px;
+}
+
+#htmlstart{
+	text-align: center;
+	border-top: dotted #D34E4E;
+	padding: 0px 30px;
+}
+
+#cssstart{
+	text-align: center;
+	border-top: dotted#D34E4E;
+	border-bottom: solid #D34E4E;
+	padding: 0px 30px;
+}
+
+.redbold{
+	font-weight: bold;
+	color: red;
+}
+
+#nostyle{
+	
+	color: black;
+	font-family: serif;
+	
+}
+
+/*CSS color example -start*/
+
+#colorone{
+	color: red;
+	font-size: 25px;
+}
+#colortwo{
+	color: #FF5900;
+	font-size: 25px;
+}
+#colorthree{
+	color: #FFB200;
+	font-size: 25px;
+}
+#colorfour{
+	color: green;
+	font-size: 25px;
+}
+#colorfive{
+	color: lightblue;
+	font-size: 25px;
+}
+#colorsix{
+	color: blue;
+	font-size: 25px;
+}
+#colorseven{
+	color: indigo;
+	font-size: 25px;
+}
+#coloreight{
+	color: purple;
+	font-size: 25px;
+}
+#colornine{
+	color: violet;
+	font-size: 25px;
+}
+/*CSS color example -end*/
+
+/*What is HTML and CSS styling -end*/
+
+
+
+
+
+/*Start coding section -start*/
+
+#startcoding{
+	text-align: center;
+	height: calc(40vh + 150px);
+	width: 100vw;
+	background: linear-gradient(to bottom right, #FFC9B2, #FFFFFF);
+}
+
+#startcoding h2{
+	padding-top: 20px;
+	margin: 0;
+}
+
+#startcoding h2, #startcoding p{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#startlearninglink{
+	color: black;
+}
+
+#htmlsymbol{
+	height: 150px;
+}
+
+/*Start coding section -end*/
+
+
+
+
+
+

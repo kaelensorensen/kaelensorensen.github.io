@@ -1,0 +1,11 @@
+
+#formarea{
+	width:calc(100vw - 20px);
+	height: 800px;
+	margin-left: 10px;
+	margin-top: 80px;
+	z-index: -1;
+}
+#spacerthing{
+	height: 58px;
+}

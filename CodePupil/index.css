@@ -1,0 +1,66 @@
+#homescreen{
+	height: 100vh;
+	box-sizing: border-box;
+	padding-top: calc((100vh - 100px) /2);
+	display: block;
+	text-align: center;
+	border-bottom: 3px solid #D34E4E;
+	background: linear-gradient(132deg, #FFFFFF, darkorange);
+	background-size: 400% 400%;
+	animation: BackgroundGradient 10s ease infinite;
+	z-index: -2;
+	position: relative;
+}
+
+#welcome{
+	padding: 0px 10vw;
+	z-index: 10000000;
+}
+@keyframes BackgroundGradient{
+	0%{ background-position: 0%;}
+	50%{ background-position: 100% 50%;}
+	100%{ background-position: 0%;}
+}
+body{
+	background-color: #FFFFFF;
+}
+#sameheightcoursebox{
+	display: flex;
+	margin-bottom: 20px;
+}
+.coursebox {
+	width: calc((100vw / 3) - 20px);
+	margin-left: 13px;
+	padding: 10px;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	border: 1px solid;
+	border-radius: 25px;
+	background-color: #FFDAAA;
+	text-align: center;
+	float: left;
+
+
+}
+#downbutton{
+
+}
+#downbutton a{
+	text-decoration: none;
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#course{
+	font-size: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.startcourse{
+	color: red;
+}
+#whiteboxcourse{
+	height: calc(86vh);
+}

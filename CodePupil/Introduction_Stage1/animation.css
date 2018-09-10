@@ -1,0 +1,47 @@
+#spinningimage{
+	position: relative;
+	animation:animated_div 3s infinite;
+	-moz-animation:animated_div 3s infinite;
+	-webkit-animation:animated_div 3s infinite;
+	-o-animation:animated_div 3s infinite;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	width: 100px;
+}
+
+@keyframes animated_div{
+	0% {transform: rotate(30deg);}
+	17% {transform: rotate(90deg);}
+	34% {transform: rotate(150deg);}
+	51% {transform: rotate(210deg);}
+	68% {transform: rotate(270deg);}
+	84% {transform: rotate(330deg);}
+	100% {transform: rotate(390deg);}
+}
+
+@-webkit-keyframes animated_div{
+	0% {-webkit-transform: rotate(30deg);}
+	17% {-webkit-transform: rotate(90deg);}
+	34% {-webkit-transform: rotate(150deg);}
+	51% {-webkit-transform: rotate(210deg);}
+	68% {-webkit-transform: rotate(270deg);}
+	84% {-webkit-transform: rotate(330deg);}
+	100% {-webkit-transform: rotate(390deg);}
+}
+@-moz-keyframes animated_div{
+	0% {-moz-transform: rotate(30deg);}
+	17% {-moz-transform: rotate(90deg);}
+	34% {-moz-transform: rotate(150deg);}
+	51% {-moz-transform: rotate(210deg);}
+	68% {-moz-transform: rotate(270deg);}
+	84% {-moz-transform: rotate(330deg);}
+	100% {-moz-transform: rotate(390deg);}
+}
+
+@-o-keyframes animated_div{
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(90deg);}
+	50% {transform: rotate(180deg);}
+	75% {transform: rotate(270deg);}
+	100% {transform: rotate(360deg);}
+}

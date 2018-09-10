@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>	
+
+		<title>Learning How to code HTML</title>
+
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+		<link type="text/css" rel="stylesheet" href="../menu.css" />
+
+		<link type="text/css" rel="stylesheet" href="../allpages.css" />
+
+		<link type="text/css" rel="stylesheet" href="howtohtml.css" />
+
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
+
+		<link rel="icon" type="image/png" href="../Images/Allpages/Logo.png"/>
+
+		<script src="../menu.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script>
+			//https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
+			$(document).ready(function(){
+
+				$("a").on('click', function(event) {
+
+					if (this.hash !== "") {
+						event.preventDefault();
+						var hash = this.hash;
+
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top - 90}, 1000, function(){
+						});
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div id="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#AnchorElement" onclick="closeNav()">Elements</a>
+			<a href="#AnchorAttribute" onclick="closeNav()">Attributes</a>
+			<a href="#AnchorFile" onclick="closeNav()">Creating a webpage</a>
+			<a href="#AnchorContent" onclick="closeNav()">Adding content</a>
+			<a href="#AnchorTaglist" onclick="closeNav()">List of tags</a>
+			<a href="#AnchorHyperlink" onclick="closeNav()">Adding a hyperlink</a>
+			<a href="#AnchorTitle" onclick="closeNav()">Adding a title</a>
+			<a href="#AnchorValidation" onclick="closeNav()">Validation</a>
+			<a href="#AnchorLists" onclick="closeNav()">Lists</a>
+			<a href="#AnchorImages" onclick="closeNav()">Images</a>
+			<a href="#AnchorTables" onclick="closeNav()">Tables</a>	
+		</div>
+		<div class="menuout">
+			<ul class="menu">
+				<li id=sidenavonmenu style="cursor:pointer" onclick="openNav()">&#9776; </li>
+				<li class="homebutton">	
+					<a href="../index.html"><img src="../Images/Allpages/Logotext.png" alt="logo image"/></a>
+				</li>
+
+				<li class="dropdown">
+					<a href="#" class="dropbtn">Lessons</a>
+
+					<div class="dropdown-content">
+						<a href="../Introduction_Stage1/introduction.html">1. An introduction into the web </a>
+						<a href="#">2. Learning HTML markup</a>
+						<a href="../CSS_Stage3/howtocss.html">3. Learning how to code CSS</a>
+						<a href="../FinalTips_Stage4/generalhowto.html">4. Some final tips to create an awesome website</a>
+					</div>
+				</li>
+
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Quick Links</a>
+
+					<div class="dropdown-content">
+						<a href="https://validator.w3.org/">HTML W3C Validator</a>
+						<a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a>
+						<a href="../TextEditor/text.html"> A place to write HTML, CSS and JavaScript!</a>
+					</div>
+				</li>
+
+				<li class="about">
+					<a href="../About/about.html">About us</a>
+				</li>
+
+			</ul>
+
+		</div>
+
+		<div id="pageall">
+			<div class="pagetop">
+
+				<h1>Learning how to write HTML markup and create your first webpage!</h1>
+
+				<p>The second of 4 stages in your epic adventure!</p>
+			</div>
+			
+
+			<div id="ElementIntroduction">
+
+
+				<h2 class="headinganchorspacing"><a id="AnchorElement"></a>An introduction into elements</h2>
+
+
+				<p>HTML becomes fairly basic once you understand how it works.</p>
+
+				<p>A HTML page is made up of many <strong>elements</strong> which form together to make a web page which a browser can display.</p>
+
+				<p>Each element consists of a starting tag, content and then an ending tag. The starting tag has a unique set of letters that stand for a specific word or sometimes multiple words inside chevrons or <span class="taggrey">&lt;></span> (there is a link to a full list of tags further down the page). You should also try and write tags in lower case as they look neater, are easier to write and some html octypes require lowecase elements. An example of this is <span class="taggrey">&lt;</span><span class="tagred">p</span><span class="taggrey">></span> which stands for paragrapgh and tells the browser that you are beginning a paragrapgh element.</p>
+
+				<p>After you have opened a tag you usually want to put some text or content into it. You do this by just typing text between the opening and closing tag which you will now create. You close a basic tag by just repeating the opening tag except with a forward slash before the letters like this <span class="taggrey">&lt;/</span><span class="tagred">p</span><span class="taggrey">></span>.</p>
+
+				<p>A completed element looks something like this <span class="taggrey">&lt;</span><span class="tagred">p</span><span class="taggrey">></span><span class="content">Content</span><span class="taggrey">&lt;/</span><span class="tagred">p</span><span class="taggrey">></span>, you can also see this in the image below.</p>
+
+				<div><img src="../Images/HTML_Stage2/Explanation/Completed_Tag.png" alt="completed tag example" id="tagexample"/></div>
+			</div>
+			
+			
+			<div id="ElementContinuation">
+				<h3>Tags without content</h3>
+
+				<p>There are some tags without content and these tags sometimes link to something or add style to a page. Examples of these are <span class="taggrey">&lt;</span><span class="tagred">img</span><span class="taggrey">></span> tags which add images, <span class="taggrey">&lt;</span><span class="tagred">link</span><span class="taggrey">></span> tags which help link to external style sheets and <span class="taggrey">&lt;</span><span class="tagred">br</span><span class="taggrey">></span> or break tags which force a line break.</p>
+
+				<p><span class="importantnote">Note:</span> These tags have to be self closed even though they will work without doing this. To self close contentless tags you put a forward slash just before the end chevron like this: <span class="taggrey">&lt;</span><span class="tagred">img</span><span class="taggrey">/></span>. Be warned the tag to the left is not complete as it is missing attributes.</p>
+
+
+			</div>
+
+
+
+
+			<div id="AttributeIntroduction">
+				
+				<a id="AnchorAttribute"></a>
+				
+				<h2>What are attributes?</h2>
+
+				<p>Attributes usually provide additional information to a tag however some tags like the img, link and a tag will not work without them. Attributes are <strong>always</strong> written in the start tag and should be written in lower case.</p>
+
+				<p>Different attributes specify different things and some attributes can only be used by 1 or 2 tags, however there are universal attributes like <span class="tagyellow">class</span>, <span class="tagyellow">id</span> and <span class="tagyellow">style</span> which all have something to do with style and will be talked about later when you venture into CSS territory.</p>
+
+				<p>Below is an image of multiple attributes in a tag</p>
+
+				<img src="../Images/HTML_Stage2/Explanation/Attributesinuse.png" alt="Multiple attributes in use"/>
+				<p>As you can see attributes have spaces either side of them. Attributes also have are created in 
+					
+					
+					and value pairs and are separated by a equals sign. The value also has to be inside of quatation marks.</p>
+				<p><i>Now that you know how to create your own tags you can create your first webpage.</i></p>
+
+			</div>
+
+
+
+
+			<div id="creatingfile">
+
+				<h2><a id="AnchorFile"></a>Your first webpage!</h2>
+
+				<p>Now that you have an understanding of how elements work its time to creat your first webpage! Do this by opening up edstem an clicking the <b>New Workspace</b> button around the top right of your screen. This is shown in the image below.</p>
+
+				<div><img src="../Images/HTML_Stage2/CreatingDocument/Newworkspace.png" alt="New workspace button" id="workspacebutton"/></div>
+
+				<p>This will show then open up a menu like the one below:</p>
+
+				<div><img src="../Images/HTML_Stage2/CreatingDocument/Newworkspacemenu.png" alt="Workspace menu example" id="workspacemenu"/></div>
+
+				<p>You can name the workspace whatever you want, but for now we are going to name it <q>First Webpage</q>. Change the type by clicking on it and then selecting HTML/JS/CSS. Once this is done click create and you will be taken to a page that looks something like this:</p>
+
+				<div><img src="../Images/HTML_Stage2/CreatingDocument/Emptyhtmlpage.png" alt="Edstem without L33T H4ck0r M0d3 turned on" class="wholepageimage"/></div>
+
+				<p>Before you do anything else click the gear up the top of the top right of the page and select the button L33T H4ck0r M0d3. This step <strong>can't</strong> be skipped.</p>
+
+				<div><img src="../Images/HTML_Stage2/CreatingDocument/Edstemmenu.png" alt="L33T H4ck0r M0d3 selection" class="wholepageimage"/></div>
+
+				<p>Once you have done this your page should look like this:</p>
+
+				<div><img src="../Images/HTML_Stage2/CreatingDocument/Emptyhtmlpagel33t.png" alt="L33T H4ck0r M0d3 in action" class="wholepageimage"/></div>
+
+				<p><strong>Always</strong> make sure you are using L33T H4ck0r M0d3 because it makes you a better coder and most images of the tasks will be in the L33T H4ck0r M0d3 color scheme so we highly advide you to do so.</p>
+
+				<p>Now click the new file button in the column at the left of the screen under the title First Webpage. This will bring up a text box at the top of the page. Just write <q>index.html</q>. The .html makes this file a html file and will help you with writing the tags.</p>
+
+				<div><img src="../Images/HTML_Stage2/CreatingDocument/Creatingfile.png" alt="Creating a file tab" class="wholepageimage"/></div>
+
+				<p>After you click enter your edstem should look like this:</p>
+
+				<div><img src="../Images/HTML_Stage2/CreatingDocument/Blankfile.png" alt="After file is created" class="wholepageimage"/></div>
+			</div>
+
+
+
+
+			<div id="addingcontent">	
+
+				<div id="addingcontenttitle">
+
+					<h2><a id="AnchorContent"></a>Adding some content into your html page</h2>
+
+				</div>
+				
+
+				<div id="addingcontentmain">
+					<h3>Your first line of code!</h3>
+
+					<p>In HTML <strong>everything</strong> (except the doctype) lies inside an opening <span class="taggrey">&lt;</span><span class="tagred">html</span><span class="taggrey">></span> tag and a closing <span class="taggrey">&lt;/</span><span class="tagred">html</span><span class="taggrey">></span>tag. Put the opening tag on row 2 of your edstem page because we will later put the doctype on row 1.</p>
+
+					<p>After this create a head tag and close it and then create a body tag and then close it (both inside the html tags).Mke sure that these two tags are separate and one isn't inside the other. The tag will go red if you write these tags incorrectly. Your page will shoul look something like this:</p>
+
+					<div><img src="../Images/HTML_Stage2/Coffee_Lounge/Firststage.png" alt="1st coding stage"/></div>
+
+					<p>If your page doesn't look like the image above just change this now.</p>
+
+					<p><span class="importantnote">IMPORTANT:</span> Everything that is shown on the webpage lies inside a body tag and everything that is not actually displayed on the website lies in the head tag as this is not displayed on the webpage.</p>
+
+					<p>You can view what your webpage looks like by clicking the globe button up in the same area as the settings button where you changed to L33T H4ck0r M0d3.</p>
+
+					<p>This will also display a url which you can copy and paste into any web browser and it will show your webpage, the url does change though.</p>
+
+				</div>
+				
+				
+				
+
+				<div id="addingcontentheadings">
+					<h3>Headings</h3>
+
+					<p>Headings are another type of tag which tell the web browser that you are writing text. Headings have preset size, weight and padding so you can create a basic website without any CSS!</p>
+
+					<p>Altogether there are 6 heading tags which are <span class="tagred">h1</span> to <span class="tagred">h6</span>. <span class="tagred">h1</span> is the largest and <span class="tagred">h6</span> is the smallest heading. Below you can see the headings in order if size.</p>
+					<div class="nostyle">
+						<h1>This is h1</h1>
+						<h2>This is h2</h2>
+						<h3>This is h3</h3>
+						<h4>This is h4</h4>
+						<h5>This is h5</h5>
+						<h6>This is h6</h6>
+					</div>
+				</div>
+
+				
+				
+				
+				<div id="addingcontenttext">
+					
+					<h3>General text</h3>
+
+					<p>For general text you can either use the <span class="taggrey">&lt;</span><span class="tagred">p</span><span class="taggrey">></span> tag or the <span class="taggrey">&lt;</span><span class="tagred">div</span><span class="taggrey">></span> tag. For our website we are going to be using the <span class="taggrey">&lt;</span><span class="tagred">p</span><span class="taggrey">></span> tag (which stands for paragragh) as it has preset padding that we are going to use. A <span class="taggrey">&lt;</span><span class="tagred">div</span><span class="taggrey">></span> tag has no preset padding and won't look good on our page without styling. However these tags are also very useful for dividing parts of your page and having a tag with no style. A webpage will usually display text if it is not inside one of these tags, however your page will not validate later.</p>
+				</div>
+
+				<div id="addingcontentaction">			
+					<h3>Putting your knowledge into action</h3>
+
+					<p>Now the owner of the new coffee shop down the street has asked you to make a website for him that just tells customers a the location of his shop, the opening date and time and he also wants this page to link to his main page of his website.</p>
+					<p>Go to your basic webpage template and inside the body tag create a heading 1 that says <q class="typethis">Coffee Lounge Grand Opening!</q>.</p>
+					<p>After this you want to create a paragrapgh tag that says:</p>
+					<p><q class="typethis">On Friday the 23rd of June at 11:00 Coffee lounge will be opened to the public! Coffee Lounge sells the best coffee in Australia and we guarantee that you will enjoy it. Our new store is located at 30 <i>Corinna Street, Phillip, ACT 2606</i> so don't be late</q></p>
+					<p>Then another paragrapgh that says:</p> 
+					<p><q class="typethis">For the opening day only everyone is entitled to 1 FREE cup of coffee so don't be late!</q></p>
+					<p>Your HTML should look something like this:</p>
+					<div><img src="../Images/HTML_Stage2/Coffee_Lounge/Coffeelounge1.png" alt="Stage 1 of Coffee Lounge"/></div>
+				</div>
+			</div>
+
+
+
+
+			<div id="taglist">	
+				<h2><a id="AnchorTaglist"></a>A list of HTML tags</h2>
+
+				<p>We still need to create a hyperlink that links to the main Coffee Lounge website.</p>
+
+				<p>Below is a table that tells you what each of the individual elements does and what they are best used for. See if you can find which tag we will be using for our hyperlink.</p>
+
+				<table id="elementsofhtml">
+					<tr class="headingrow">
+						<th class="elementtable">Tag</th>
+						<th class="elementtable">What it is used for</th>
+						<th class="elementtable">What the tag looks like in source code</th>
+						<th class="elementtable">What the tag looks like on the actual page</th>
+					</tr>
+					<tr>
+						<td class="elementtableelement">html</td>
+						<td class="elementtable">The html tag should contain all the content that is required to create a webpage (besides the doctype tag which will be talked about later)</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">html</span><span class="taggrey">></span><br/> <span class="taggrey">&lt;/</span><span class="tagred">html</span><span class="taggrey">></span></td>
+						<td class="elementtable">This tag is not displayed on the webpage</td>
+					</tr>
+
+					<tr>
+						<td class="elementtableelement">head</td>
+						<td class="elementtable">The head element contains everything that is not displayed on the page, this is usually where you add the style, link and/or title tag. </td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">head</span><span class="taggrey">></span><br/> <span class="taggrey">&lt;/</span><span class="tagred">head</span><span class="taggrey">></span></td>
+						<td class="elementtable">This tag is not displayed on the webpage</td>
+					</tr>
+
+					<tr>
+						<td class="elementtableelement">body</td>
+						<td class="elementtable">The body element contains all the HTML that is displayed on the actual webpage everything you can see on this screen, besides the title is inside of the body element.</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">body</span><span class="taggrey">></span><br/> <span class="taggrey">&lt;/</span><span class="tagred">body</span><span class="taggrey">></span></td>
+						<td class="elementtable">This tag is not displayed on the webpage</td>
+					</tr>
+
+					<tr>
+						<td class="elementtableelement">title</td>
+						<td class="elementtable">The title tag is the text displayed in the tab button at the top of the page. This element is always inside the head element.</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">title</span><span class="taggrey">></span> Put your webpage title here<span class="taggrey">&lt;/</span><span class="tagred">title</span><span class="taggrey">></span></td>
+						<td class="elementtable">This tag displays up the top of the browser in the tab</td>
+					</tr>
+
+					<tr>
+						<td class="elementtableelement">link</td>
+						<td class="elementtable"> The link tag allows you to use external style or data from another page. You usually use this tag to link to a CSS or Javascript document so that you don't have to crowd all your styling into your HTML document, especially when you have alot of text. This tag is located in the head of the page and doesn't have any content.</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">link</span> <span class="tagyellow">type</span>=<span class="tagpink">"type of document"</span> <span class="tagyellow">href</span>=<span class="tagpink">"link location"</span> <span class="tagyellow">rel</span>=<span class="tagpink">"relation between link"</span><span class="taggrey">/></span></td>
+						<td class="elementtable">This tag is not displayed on the webpage</td>
+					</tr>
+
+					<tr>
+						<td class="elementtableelement">style</td>
+						<td class="elementtable">This tag allows you to add style to your page without linking an external CSS document, we will talk about the differences between these two styling methods later in  <i>3. Learning how to code CSS </i>.</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">style</span><span class="taggrey">></span><br/>(CSS goes in here)<br/><span class="taggrey">&lt;/</span><span class="tagred">style</span><span class="taggrey">></span></td>
+						<td class="elementtable">This tag is not directly displayed on the webpage and instead can be used to alter other elements on the page.</td>
+					</tr>
+
+					<tr>
+						<td class="elementtableelement">h1-6</td>
+						<td class="elementtable">h1 stands for heading 1 and heading 1 is the largest of the heading tags, with the headings getting smaller as the heading number increases. h6 is the smallest heading tag and is smaller than the preset paragrapgh styling. Heading tags have preset size and style so that you can create an decent website without any CSS!</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">h4</span><span class="taggrey">></span>Heading 4<span class="taggrey">&lt;/</span><span class="tagred">h4</span><span class="taggrey">></span></td>
+						<td class="elementtable"><h4>Heading 4</h4></td>
+					</tr>
+					<tr>
+						<td class="elementtableelement">p</td>
+						<td class="elementtable">p stands for paragrapgh and is the tag that you should use for most text on the page (unless you use a div tag). p tags have preset size, style and padding</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">p</span><span class="taggrey">></span>Text goes here!<span class="taggrey">&lt;/</span><span class="tagred">p</span><span class="taggrey">></span></td>
+						<td class="elementtable"><p>Text goes here!</p></td>
+					</tr>
+					<tr>
+						<td class="elementtableelement">div</td>
+						<td class="elementtable"> div stands for division and is usually used to create containers which other content lies within. div tags by default have no styling so that they can easily be used to crea</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">div</span><span class="taggrey">></span>Text goes here!<span class="taggrey">&lt;/</span><span class="tagred">div</span><span class="taggrey">></span></td>
+						<td class="elementtable">Text goes here!</td>
+
+					</tr>
+					<tr>
+						<td class="elementtableelement">a</td>
+						<td class="elementtable"> An a tag is a hyperlink tag which goes around the text that it is making a hyperlink. This tag has to be inside a p or div tag to validate and requires the href attribute to operate. An unvisited link is underlined and blue, a visited link is underlined and purple and an active link is underlined and red.</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">p</span><span class="taggrey">></span>To visit our page just click <span class="taggrey">&lt;</span><span class="tagred">a</span> <span class="tagyellow">href</span>=<span class="tagpink">"url here"</span><span class="taggrey">></span>HERE!<span class="taggrey">&lt;/</span><span class="tagred">a</span><span class="taggrey">>&lt;/</span><span class="tagred">p</span><span class="taggrey">></span></td>
+						<td class="elementtable"><p>To visit our page just click <a href="#">HERE!</a></p></td>
+					</tr>
+					<tr>
+						<td class="elementtableelement">strong</td>
+						<td class="elementtable">This tag goes around text like the <span class="tagred">a</span> tag. However instead of creating a hyperlink this tag this tag will make the text bold. This tag is only meant for emphasizing important text and has to be inside a p or div tag.</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">strong</span><span class="taggrey">></span>IMPORTANT TEXT<span class="taggrey">&lt;/</span><span class="tagred">strong</span><span class="taggrey">></span></td>
+						<td class="elementtable"><strong>IMPORTANT TEXT</strong></td>
+					</tr>
+					<tr>
+						<td class="elementtableelement">br</td>
+						<td class="elementtable">This tag stands for break and forces a break in the page and text. This tag has to be closed as it has no content.</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">br</span><span class="taggrey">/></span></td>
+						<td class="elementtable">This tag just creates a break in<br/> the<br/> text.</td>
+					</tr>
+					<tr>
+						<td class="elementtableelement">img</td>
+						<td class="elementtable">This tag alows you to add an image to your page. This tag requires a href attribute to work and also requires the alt attribute to validate. Since this tag has no text content you have to force close this tag</td>
+						<td class="elementtable"><span class="taggrey">&lt;</span><span class="tagred">br</span> <span class="tagyellow">src</span>=<span class="tagpink">"Source of image"</span> <span class="tagyellow">alt</span>=<span class="tagpink">"alt text"</span><span class="taggrey">/></span></td>
+						<td class="elementtable"><img src="../Images/HTML_Stage2/Explanation/Smile.png" alt="Happy face"></td>
+					</tr>
+				</table>
+
+				<p id="fulltaglink">For a full list of the tags visit: <a href="https://www.w3schools.com/tags/default.asp">https://www.w3schools.com/tags/default.asp</a>.</p>	
+
+			</div>
+
+
+
+			<div id="addinghyperlink">	
+
+				<h2><a id="AnchorHyperlink"></a>Adding a hyperlink</h2>
+				<p>Add some new <span class="tagred">p</span> tags down the bottom of the page and inside them write:<q>To go back to our webpage click here.</q>. We are going to add a link that takes them back to the main website at the bottom of the page.</p>
+
+				<p>Now add the <span class="tagred">a</span> tags around the word <q>here</q> and add the href attribute that links to: https://www.coffeelounge.com/mainpage.html (link will not actually work) </p>
+
+				<p>Your link should look something like this: <q class="typethis">To go back to our main website click <a href="">here</a>.</q></p>
+
+				<p>And your source code should look like this:</p>
+
+				<img src="../Images/HTML_Stage2/Coffee_Lounge/HyperlinkCoffeeLounge.png" alt="Source code with a hyperlink in it">
+
+				<p>If your webpage doesn't look like the image above just change this now.</p>
+
+			</div>
+
+			<div id="addingtitle">
+				<h2><a id="AnchorTitle"></a>Adding a webpage title</h2>
+
+				<p>A title is the TEXT you read in the tab section of your webpage. <strong>Note:</strong> This is not how you change the icon!</p>
+
+				<p>The <span class="tagred">title</span> tag is located in the head section of the webpage and all you have to do is type the title like you type content inside p tags.</p>
+
+				<p>We are going to name our webpage <q>New Coffee Lounge Store Opening!</q>. Copy and paste the below into the head section of your page.</p>
+
+				<p><span class="taggrey">&lt;</span><span class="tagred">title</span><span class="taggrey">></span>New Coffee Lounge Store Opening!<span class="taggrey">&lt;/</span><span class="tagred">title</span><span class="taggrey">></span></p>
+
+				<p><strong>BTW</strong> you should also change the workspace title to <q>Coffee Lounge</q>.</p>
+
+			</div>
+			<div id="validatingsection">
+
+				<h2><a id="AnchorValidation"></a>Validating</h2>
+
+				<p>Now that you have a website your going to want to validate it so that you can be sure it is going to work with all web browsers. Validating is important as it means that even tbough your website might work fine now it might not work in the future due to changes in the web browsers.</p>
+
+				<p>Validating also means that your code requires less maintenance so if you can validate now, you are going to save yourself a lot of time in the future. Furthermore validating is a sign of professionalism and it also helps you check your work for debugging incase your website doesn't work and you don't know what is wrong.</p>
+
+				<p>Now as you may or may not know there are different kinds of html and some have different features and requirements for validating. These different types of html are specified in the doctype tag which always goes in the top line of a html page. You are learning XHTML 1.0 Strict as this is probably the easiest html type to learn and has extra requirements that teach you good practices.</p>
+
+				<p>The doctype for XHTML 1.0 Strict is (copy and paste it into :</p>
+
+				<div id="doctypeexample">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"></div>
+
+				<p>We still got to do 2 more things until your page validates:</p>
+
+				<p>1. Add this attribute to your html tag: <span class="tagyellow">xmlns</span>=<span class="tagpink">"http://www.w3.org/1999/xhtml"</span> <span class="tagyellow">lang</span>=<span class="tagpink">"en"</span></p>
+
+				<p>2. Copy and paste this <span class="tagred">meta</span> tag into the <span class="tagred">head</span> tag: <span class="taggrey">&lt;</span><span class="tagred">meta</span> <span class="tagyellow">http-equiv</span>=<span class="tagpink">"content-type"</span> <span class="tagyellow">content</span>=<span class="tagpink">"text/html; charset=UTF-8"</span><span class="taggrey">/></span></p>
+
+				<p>Now your page should be able to validate, just copy the url of your webpage into the <a href="https://validator.w3.org/">validator</a> and it should return no errors. If it does try and fix them. Your page should look something like this:</p>
+
+				<img src="../Images/HTML_Stage2/Coffee_Lounge/ValidatedCoffeeLounge.png" alt="Validated source code"/>
+
+			</div>
+
+			<div id="creatinglists">
+				<h2><a id="AnchorLists"></a>Creating Lists</h2>
+
+				<p>Now before I let you go off and start learning CSS you have to learn how to create lists and tables so that you can handle any request for a website someone asks for.</p>
+
+				<p>There are two types of lists that you can create using html. These being an ordered and unordered list. An ordered list has number bulletpoints so that you can list instructions or and order of happenings.</p>
+
+				<p>An unordered list has bullet points instead and just looks neater for listing unordered events or locations.</p>
+				<div class="leftpersonout">
+					<div class="leftperson">
+						<div class=leftpersonarrow></div>
+						<div>But couldn't I just make a list using paragragh tags</div>
+					</div>
+				</div>
+
+				<div class="rightpersonout">
+
+					<div class="rightperson">
+						<div class=rightpersonarrow></div>
+						<div>Well you could but you can't create dotpoints as easily and if you wanted to add an item in the middle of an ordered list you would have to retype all the items below.</div>
+					</div>
+				</div>
+				<br/>
+				<div id="creatinglistsworkings">
+					<h3>So how do lists work?</h3>
+					<p>You create lists by nesting list item or (li) tags inside either an ordered list (ol) or unordered list (ul) tag. Below is an image of an unorderd list in source code.</p> 
+					<div id="listimage"><img src="../Images/HTML_Stage2/Explanation/ListImage.png" alt="An image of a list"></div>
+				</div>
+				<div class=block>	
+					<div class="leftperson">
+						<div class=leftpersonarrow></div>
+						<div>If only there was a way to show off your new found list creating skills.</div>
+					</div>
+				</div>
+				<div class=block>
+					<div class="rightperson">
+						<div class=rightpersonarrow></div>
+						<div>Well as a matter of fact the owner of Coffee Lounge just messaged me and he also wants you to add an unordered list of other stores in the area in case the new store is too far away from some people's work. The addresses are below.</div>
+					</div>
+				</div>
+				<div id="storelocations">
+					<h3>Store Locations</h3>
+					<ul id="storelocationslist">
+						<li>GUNGAHLIN SQUARE, 43 Hibberson Street, Gungahlin, ACT 2912</li>
+						<li>Unit 44, 2-60 West Row, City, ACT 2601</li>
+						<li>Unit 146, 37 Eastlake Parade, Kingston, ACT 2604</li>
+						<li>72 Barrier Street, Fyshwick, ACT 2609</li>
+					</ul>
+					<p>Now using your knowledge of how to add lists, create the below in your Coffee Lounge html doc.</p>
+				</div>	
+				<div id="storelocationsimg"><img src="../Images/HTML_Stage2/Coffee_Lounge/Storelocationslist.png" alt="Create this list!"></div>	
+
+			</div>		
+
+			<div id="addingimages">
+				<h2><a id="AnchorImages"></a>Adding images!</h2>
+				<p>Images can add a lot to your page and they are relatively easy to add. Now as you've read above images require the img tag and 2 attributes to work and validate, the <span class="tagyellow">src</span> and the <span class="tagyellow">alt</span> attribute.</p>
+
+				<p>The src attribute acts like the href attribute and can either link to an image in the same folder or an image on another website. To link to another website just type the url and to link to an image in edstem just type the image name and don't forget the type which is included in the name.</p>
+				
+				<p>There are 3 types of image formats and they each have their own pros and cons. We are using a png as it can handle clear backgrounds, high resolution and is the format of most good images on the internet. The only downside is it has a large file size but for the moment this doesn't matter.</p>
+
+				<p>The other attribute the <span class="tagred">img</span> tag requires the <span class="tagred">alt</span> attribute. This tag presents alt (alternative) text incase the image can't be rendered or the user is blind and is using a webpage reader. The alt text should always be something that represents what the image looks like. It is vital to the webpage validating.</p>
+
+				<p>This tag also has to be self closed as it has no content and it <strong>has</strong> to be inside <span class="tagred">p</span> or <span class="tagred">div</span> tags to validate (it's just a thing don't question it). Below you can see an image of an <span class="tagred">img</span> tag in source code:</p>
+
+				<img src="../Images/HTML_Stage2/Explanation/Attributesinuse.png" alt="Image of an img tag"/>	
+
+			</div>
+			<div id="addingimagescont">
+				<h3>Adding an image to your html page</h3>
+
+				<p>Now we are going to add the below image to your Coffee Lounge website just to show off your skills. Just click on the image to start your download. </p>
+
+				<a download="Coffee-Lounge-Picture.png" href="../Images/HTML_Stage2/Coffee_Lounge/Coffee-Lounge-Picture.png" title="Coffee Cup with Branding">
+					<img alt="Coffee Cup with Branding" src="../Images/HTML_Stage2/Coffee_Lounge/Coffee-Lounge-Picture.png" id="coffeecupimage">
+				</a>
+				
+				<p>You can upload the image to edstem by right clicking in the left side menu and clicking <q>Upload Here...</q>.</p>
+				
+				<p>Try creating the image tag off the knowledge you already know below the list you just created. If you can't then you should probably revise your knowledge using this link: <a href="https://www.w3schools.com/html/html_images.asp">https://www.w3schools.com/html/html_images.asp</a></p>
+					
+				<p>The below image shows what your source code should look like"</p>
+				
+				<img src="../Images/HTML_Stage2/Coffee_Lounge/FinalCoffeeHTML.png" alt="The final product of coffee lounge after this whole website!" id="finalcoffeehtml">
+
+			</div>
+
+
+
+
+			<div id="creatingtables">
+				<h2><a id="AnchorTables"></a>Creating tables</h2>
+
+				<p>Tables are easy to make when you know how to make them. There are 4 tags you need to know to know how to create a table you can see these in the table below:</p>
+
+				<table id="tableelementstable">
+					<tr class="headingrow">
+						<th class="elementtable">Tag</th>
+						<th class="elementtable">What it is used for</th>
+					</tr>
+
+					<tr>
+						<td class="elementtableelement">table</td>
+						<td class="elementtable">All the elemnts that make up a table lye inside of the table tag. </td>
+
+					</tr>
+					<tr>
+
+						<td class="elementtableelement">tr</td>
+						<td class="elementtable">The tr tag stands for table row and specifies a new table row. Table rowss automatically stack vertically to create rows inside a table, however this tag needs a td or th tag to be visible.</td>
+
+					</tr>
+
+					<tr>
+
+						<td class="elementtableelement">td</td>
+						<td class="elementtable">This tag stands for table data and creates a cell inside a table row. Cells stack horizontally to create columns and you should have an equal amount of td tags in a tr tag to make the table look even.</td>
+
+					</tr>
+
+					<tr>
+						<td class="elementtableelement">th</td>
+						<td class="elementtable">This tag stands for table heading and just like the td tag it creates a cell inside a table row. The only difference between these two tags is that the th tag has preset boldness that can be used for table headings with little work.</td>
+
+					</tr>
+
+				</table>
+
+				<p>From reading the table above you might have understood that tables are created through individual cells and you have to have to have the same amount of cells in each row to make your table look equal. <strong>NOTE:</strong> By default the tables have no border but you can change this with the <span class="tagyellow">border</span> attribute and the value of "1".</p>
+
+				<p>Below you can see a basic table with border 1:</p>
+
+				<table id="exampletable">
+
+					<tr>
+						<th>HEADING</th>
+						<td>DATA</td>
+						<td>DATA</td>
+					</tr>
+
+					<tr>
+						<th>HEADING</th>
+						<td>DATA</td>
+						<td>DATA</td>
+						<td>DATA</td><!--Example only! Know this was here.-->
+					</tr>
+
+					<tr>
+						<th>HEADING</th>
+						<td>DATA</td>
+						<td>DATA</td>
+					</tr> 
+
+					<tr>
+						<th>HEADING</th>
+						<td>DATA</td>
+						<td>DATA</td>
+					</tr>
+
+				</table>
+
+				<p>The table above has 4 cells in the second row which also gives you an idea of how tables work. The image below shows the source code for the table and as you can see ther is an extra <span class="tagred">td</span> tag in the second row.</p>
+
+				<img src="../Images/HTML_Stage2/Explanation/Exampletablesourcecode.png" alt="An example image of a table in source code">
+
+			</div>
+
+			<div id="nextsection">
+				<h2>It's time to move on to cooler things!</h2>
+
+				<p>If you have read and understood <strong>all</strong> the content covered in this page then you can click <a href="../CSS_Stage3/howtocss.html">this link</a> and move on to learning CSS.</p>
+				
+				<img src="../Images/HTML_Stage2/CSSlogo.png" alt="CSS logo">
+
+			</div>
+
+		</div>
+
+	</body>
+
+
+</html>

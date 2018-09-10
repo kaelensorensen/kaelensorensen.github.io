@@ -1,0 +1,35 @@
+/*Creating a folder -start*/
+
+#creatingfolders{
+	text-align: center;
+	padding: 0px 30px;
+}
+#creatingfolders img{
+	width: 80vw;
+}
+/*Creating a folder -end*/
+
+/*Final task -start*/
+#finaltask{
+	text-align: center;
+	padding: 0px 30px;
+	border-top: solid #D34E4E;
+}
+#finaltask img{
+	width: 80vw;
+}
+/*Final task -end*/
+
+
+/*Feedback -start*/
+
+#feedback{
+	text-align: center;
+	padding: 0px 30px;
+	border-top: solid #D34E4E;
+}
+#feedback a{
+	color: black;
+}
+
+/*Feedback -end*/

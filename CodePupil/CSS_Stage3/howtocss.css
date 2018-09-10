@@ -1,0 +1,227 @@
+#cssbasics {
+	text-align: center;
+	padding: 0px 30px;
+}
+#samplesmall{
+	width: 40vw;
+}
+#sampleoutertext{
+	width: 50vw;
+	margin-left: 30vw;
+}
+/*Types of CSS -start*/
+#typesofcssheading{
+	border-top: solid #D34E4E;
+	padding: 20px;
+	margin-top: 15px;
+	text-align: center;
+	border-bottom: dotted #D34E4E;
+
+}
+
+/*Inline CSS -start*/
+#inlinecss{
+	border-bottom: dotted #D34E4E;
+	text-align: center;
+	padding: 0px 30px;
+	padding-bottom: 10px;
+}
+
+#inlinecssimage{
+	width: 65vw;
+}
+/*Inline CSS -end*/
+
+/*Embedded CSS -start*/
+#embeddedcss{
+	border-bottom: dotted #D34E4E;
+	text-align: center;
+	padding: 0px 30px;
+	padding-bottom: 10px;
+}
+#embeddedcssimage{
+	width: 65vw;
+}
+/*Embedded CSS -end*/
+
+/*External CSS -start*/
+#externalcss{
+	text-align: center;
+	padding: 0px 30px;
+	padding-bottom: 10px;
+}
+#externalcssprolist{
+	text-align: center;
+	list-style-position: inside;
+}
+/*External CSS -end*/
+
+/*Types of CSS -end*/
+
+/*Creating an external CSS file -start*/
+#creatingexternalstylesheet{
+	border-top: solid #D34E4E;
+	text-align: center;
+	padding: 0px 30px;
+	padding-bottom: 10px;
+}
+#creatingexternalstylesheet img{
+	width: 80vw;
+}
+#creatingexternalstylesheet #largefont{
+	font-size: 20px;
+}
+/*Creating an external CSS file -end*/
+
+/*Selectors -start*/
+#selectorbeggining{
+	text-align: center;
+	padding: 0px 30px;
+	border-top: solid #D34E4E;
+}
+#typeselector{
+	border-top: dotted #D34E4E;
+	text-align: center;
+	padding: 0px 30px;
+}
+
+#decendantsselector{
+	border-top: dotted #D34E4E;
+	text-align: center;
+	padding: 0px 30px;
+}
+#universalselector{
+	border-top: dotted #D34E4E;
+	text-align: center;
+	padding: 0px 30px;	
+}
+#idandclassselector{
+	border-top: dotted #D34E4E;
+	text-align: center;
+	padding: 0px 30px;
+}
+#adjacentselector{
+	border-top: dotted #D34E4E;
+	text-align: center;
+	padding: 0px 30px 0px 30px;	
+}
+.selectorsample{
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 10px;
+	text-align: left;
+	margin-left: 30vw;
+	margin-right: 30vw;
+	margin-bottom: 20px;
+}
+.selectorsampleidone{
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 10px;
+	display: inline-block;
+	width: calc(100vw/5);
+	margin-right: 40px;
+	margin-left: calc(100vw/5);
+}
+.selectorsampleidtwo{
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 10px;
+	display: inline-block;
+	width: calc(100vw/5);
+	text-align: left;
+}
+.displaysameheight{
+	display: flex;
+}
+#selectorsampleadjacentone{
+	width: 35vw;
+	display: inline;
+	margin-left: calc(100vw/6);
+
+}
+#selectorsampleadjacenttwo{
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 10px;
+	display: inline-block;
+	width: calc(100vw/5);
+	text-align: left;
+	margin-left: 20px;
+}
+/*Secelctors -end*/
+
+/*CSS Styling properties -start*/
+#cssstylingproperties{
+	text-align: center;
+	margin-top: 20px;
+	padding: 0px 30px;
+	border-top: solid #D34E4E;
+}
+#cssstylingproperties table{
+	border: solid 1px;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	width: calc(100vw - 60px);
+}
+#cssstylingproperties th, #cssstylingproperties td{
+	border: solid 1px;
+	padding: 5px;
+}
+/*CSS Styling properties -end*/
+/*Divs and Spans -start*/
+#divandspan{
+	text-align: center;
+	padding: 0px 30px;
+	border-top: solid #D34E4E;	
+}
+#shape{
+	width: 50px;
+	height: 50px;
+	background: red;
+	float: right;
+	left: 300px;
+	top: 50px;
+	padding: 20px;
+}
+#endshape{
+	clear: right;
+	padding-top: 10px;
+}
+#fontchange{
+	font-family: serif;
+}
+/*Divs and Spans -end*/
+
+/*CSS Modifications -start*/
+#cssmodifications{
+	text-align: center;
+	margin-top: 20px;
+	padding: 0px 30px;
+	border-top: solid #D34E4E;
+}
+#cssmodifications ul{
+	list-style-position: inside;
+	text-align: left;
+	list-style-type: circle;
+	display: block;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#cssmodifications img{
+	width: calc(100vw - 60px);
+}
+/*CSS Modifications -end*/
+
+/*Moving on to general tips -start*/
+#finaltipsmove{
+	height: 40vh;
+	border-top: solid #D34E4E;
+	text-align: center;
+	padding: 0px 30px;
+}
+#finaltipsmove a{
+	color: black;
+}
+/*Moving on to general tips -end*/
